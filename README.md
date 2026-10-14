@@ -2,6 +2,9 @@
 
 # Emberpath
 
+[![Get it on CurseForge](https://img.shields.io/badge/Get%20it%20on-CurseForge-F16436?style=for-the-badge&logo=curseforge&logoColor=white)](https://www.curseforge.com/wow/addons/emberpath)
+[![Download latest release](https://img.shields.io/github/v/release/MadsFrost/Emberpath?style=for-the-badge&label=Download&color=2b3137)](https://github.com/MadsFrost/Emberpath/releases/latest)
+
 A travel journal addon for a group of friends playing WoW: Forever.
 
 ## What it does
