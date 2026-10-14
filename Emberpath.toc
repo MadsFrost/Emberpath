@@ -3,7 +3,7 @@
 ## Notes: A shared travel journal: secret omens, ghost trails and campfire tales.
 ## Author: Mads
 ## Version: @project-version@
-## IconTexture: Interface\Icons\Spell_Fire_Fire
+## IconTexture: Interface\AddOns\Emberpath\Icon
 ## SavedVariables: EmberpathDB
 ## SavedVariablesPerCharacter: EmberpathCharDB
 ## AddonCompartmentFunc: Emberpath_OnAddonCompartmentClick

@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+	<defs>
+		<linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#1c1236"/>
+			<stop offset="0.6" stop-color="#120b22"/>
+			<stop offset="1" stop-color="#070509"/>
+		</linearGradient>
+		<radialGradient id="warmth" cx="256" cy="330" r="270" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#ff7a1f" stop-opacity="0.55"/>
+			<stop offset="0.45" stop-color="#c2380f" stop-opacity="0.18"/>
+			<stop offset="1" stop-color="#c2380f" stop-opacity="0"/>
+		</radialGradient>
+		<radialGradient id="ground" cx="256" cy="402" r="180" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1 0 0 0.25 0 301.5)">
+			<stop offset="0" stop-color="#ffb347" stop-opacity="0.85"/>
+			<stop offset="1" stop-color="#ff5a1f" stop-opacity="0"/>
+		</radialGradient>
+		<linearGradient id="outerFlame" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" stop-color="#ff4a12"/>
+			<stop offset="0.7" stop-color="#e0260b"/>
+			<stop offset="1" stop-color="#9e1407"/>
+		</linearGradient>
+		<linearGradient id="midFlame" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" stop-color="#ffc23d"/>
+			<stop offset="1" stop-color="#ff7a1a"/>
+		</linearGradient>
+		<linearGradient id="coreFlame" x1="0" y1="1" x2="0" y2="0">
+			<stop offset="0" stop-color="#ffffff"/>
+			<stop offset="1" stop-color="#ffe680"/>
+		</linearGradient>
+		<linearGradient id="wood" x1="0" y1="0" x2="0" y2="1">
+			<stop offset="0" stop-color="#8a5230"/>
+			<stop offset="0.5" stop-color="#5e3219"/>
+			<stop offset="1" stop-color="#2e170b"/>
+		</linearGradient>
+		<linearGradient id="gold" x1="0" y1="0" x2="1" y2="1">
+			<stop offset="0" stop-color="#ffe2a0"/>
+			<stop offset="0.45" stop-color="#d49a3a"/>
+			<stop offset="1" stop-color="#6e4314"/>
+		</linearGradient>
+		<filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="6" result="blur"/>
+			<feMerge>
+				<feMergeNode in="blur"/>
+				<feMergeNode in="SourceGraphic"/>
+			</feMerge>
+		</filter>
+		<filter id="softGlow" x="-50%" y="-50%" width="200%" height="200%">
+			<feGaussianBlur stdDeviation="14"/>
+		</filter>
+	</defs>
+
+	<rect width="512" height="512" fill="url(#sky)"/>
+	<rect width="512" height="512" fill="url(#warmth)"/>
+
+	<g fill="#fff">
+		<circle cx="58" cy="62" r="2.2" opacity="0.7"/>
+		<circle cx="112" cy="118" r="1.5" opacity="0.5"/>
+		<circle cx="446" cy="76" r="2.4" opacity="0.75"/>
+		<circle cx="404" cy="146" r="1.5" opacity="0.45"/>
+		<circle cx="470" cy="210" r="1.6" opacity="0.4"/>
+		<circle cx="40" cy="190" r="1.4" opacity="0.4"/>
+	</g>
+
+	<ellipse cx="256" cy="402" rx="190" ry="46" fill="url(#ground)"/>
+
+	<g filter="url(#glow)" fill="#ffb347">
+		<circle cx="52" cy="478" r="5" opacity="0.3"/>
+		<circle cx="84" cy="462" r="6" opacity="0.42"/>
+		<circle cx="114" cy="440" r="7" opacity="0.55"/>
+		<circle cx="146" cy="424" r="7.5" opacity="0.7"/>
+		<circle cx="178" cy="414" r="8" opacity="0.85"/>
+	</g>
+
+	<g>
+		<g transform="rotate(16 256 396)">
+			<rect x="146" y="380" width="220" height="34" rx="17" fill="url(#wood)"/>
+			<circle cx="349" cy="397" r="15" fill="#c98a54"/>
+			<circle cx="349" cy="397" r="8" fill="none" stroke="#7a4522" stroke-width="3"/>
+		</g>
+		<g transform="rotate(-16 256 396)">
+			<rect x="146" y="380" width="220" height="34" rx="17" fill="url(#wood)"/>
+			<circle cx="163" cy="397" r="15" fill="#c98a54"/>
+			<circle cx="163" cy="397" r="8" fill="none" stroke="#7a4522" stroke-width="3"/>
+		</g>
+	</g>
+
+	<path d="M256 96 C276 150 330 180 344 250 C356 310 322 372 256 376 C190 372 156 316 168 256 C176 214 204 196 212 160 C226 190 232 206 240 214 C236 170 244 130 256 96 Z" fill="#ff5a1f" opacity="0.6" filter="url(#softGlow)"/>
+	<path d="M256 96 C276 150 330 180 344 250 C356 310 322 372 256 376 C190 372 156 316 168 256 C176 214 204 196 212 160 C226 190 232 206 240 214 C236 170 244 130 256 96 Z" fill="url(#outerFlame)"/>
+	<path d="M258 168 C272 210 312 236 314 284 C316 330 290 360 256 362 C222 360 198 332 202 292 C205 262 222 250 228 226 C236 248 242 256 248 258 C246 226 250 196 258 168 Z" fill="url(#midFlame)"/>
+	<path d="M256 238 C266 268 290 288 288 316 C286 342 270 354 256 354 C240 354 224 342 224 318 C224 296 244 280 256 238 Z" fill="url(#coreFlame)"/>
+
+	<g filter="url(#glow)" fill="#ffd27a">
+		<circle cx="306" cy="118" r="4.5"/>
+		<circle cx="214" cy="104" r="3.5" opacity="0.85"/>
+		<circle cx="336" cy="74" r="3" opacity="0.7"/>
+		<circle cx="258" cy="56" r="3.5" opacity="0.8"/>
+		<circle cx="186" cy="148" r="2.5" opacity="0.6"/>
+	</g>
+
+	<rect x="9" y="9" width="494" height="494" rx="26" fill="none" stroke="url(#gold)" stroke-width="14"/>
+	<rect x="18" y="18" width="476" height="476" rx="20" fill="none" stroke="#000" stroke-opacity="0.45" stroke-width="3"/>
+</svg>

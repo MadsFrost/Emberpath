@@ -1,3 +1,5 @@
+<img src="assets/icon.png" width="128" alt="Emberpath icon">
+
 # Emberpath
 
 A travel journal addon for a group of friends playing WoW: Forever.
