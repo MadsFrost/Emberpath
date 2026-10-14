@@ -30,3 +30,13 @@ Copy or link this folder into `Interface/AddOns/Emberpath` in your WoW: Forever 
 luajit tests/run.lua
 luajit tests/smoke.lua
 ```
+
+## Release
+
+Push a version tag. GitHub runs the tests, builds `Emberpath-<version>.zip` and attaches it to a release on the Releases page.
+
+```sh
+git tag v0.1.0 && git push origin v0.1.0
+```
+
+Run `scripts/build.sh` to build the same zip locally in `.release/`.
