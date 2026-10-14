@@ -1,0 +1,6 @@
+package-as: Emberpath
+
+ignore:
+  - tests
+  - README.md
+  - .github

@@ -1,0 +1,34 @@
+## Interface: 120105
+## Title: Emberpath
+## Notes: A shared travel journal: secret omens, ghost trails and campfire tales.
+## Author: Mads
+## Version: @project-version@
+## IconTexture: Interface\Icons\Spell_Fire_Fire
+## SavedVariables: EmberpathDB
+## SavedVariablesPerCharacter: EmberpathCharDB
+## AddonCompartmentFunc: Emberpath_OnAddonCompartmentClick
+
+Pure\SHA256.lua
+Pure\OmenChain.lua
+Pure\DayClock.lua
+Pure\Geometry.lua
+Pure\Store.lua
+Pure\Chunker.lua
+Omens\Deck.lua
+
+Core.lua
+Comm.lua
+Omens\Omens.lua
+Campfires.lua
+Trail.lua
+Gathering.lua
+Ledger.lua
+
+Map\Pins.lua
+Map\Templates.xml
+Map\Provider.lua
+
+UI\MainFrame.lua
+UI\FireTab.lua
+UI\LayersTab.lua
+UI\LedgerTab.lua
