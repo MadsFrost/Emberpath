@@ -12,7 +12,7 @@ for f in $(grep -E '\.(lua|xml)$' Emberpath.toc | tr -d '\r' | tr '\\' '/'); do
 	mkdir -p "$out/Emberpath/$(dirname "$f")"
 	cp "$f" "$out/Emberpath/$f"
 done
-cp Icon.tga "$out/Emberpath/Icon.tga"
+cp Icon.tga LICENSE "$out/Emberpath/"
 sed "s/@project-version@/$version/" Emberpath.toc > "$out/Emberpath/Emberpath.toc"
 
 (cd "$out" && zip -qr "Emberpath-$version.zip" Emberpath)

@@ -42,3 +42,7 @@ git tag v0.1.0 && git push origin v0.1.0
 ```
 
 Run `scripts/build.sh` to build the same zip locally in `.release/`.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
